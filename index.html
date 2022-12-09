@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="theme" rel="stylesheet" href="src/css/styles.css" />
+    <link rel="icon" href="src/images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&display=swap"
+      rel="stylesheet"/>
+    <script src="src/js/script.js"></script>
+    <title>Lucas Acosta Website</title>
+</head>
+<body>
+    <div class="main">
+      <div class="content">
+        <div class="profile">
+          <img class="pfp" src="src/images/pfp.jpg" alt="profile picture"/>
+          <h1>Lucas Acosta</h1>
+          <h3>Data Analyst and Programmer</h3>
+          <a href="resume.pdf" download>
+            <button>Resume</button>
+          </a>
+          <a href="#hire">
+            <button>Contact Me</button>
+          </a>
+        </div>
+
+        <div class="about">
+          <div>
+            <h2>About Me and Academic Honesty</h2>
+            <p>declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+              No part of this assessment has been copied manually or electronically from any other source
+              (including web sites) except for the information supplied by the WEB222 instructors and / or
+              made available in this assessment for my use. I also declare that no part of this assignment has
+              been distributed to other students.
+            </p>
+          </div>
+
+          <div>
+            <h2>Basic Information</h2>
+            <ul>
+              <li><strong>AGE:        </strong>20</li>
+              <li><strong>EMAIL:      </strong>lheck-acosta@myseneca.ca</li>
+              <li><strong>LANGUAGE:   </strong>English, Portuguese, Spanish</li>
+              <li><strong>SECTION:    </strong>NHH</li>
+              <li><strong>ID:         </strong>165041211</li>
+              <li><strong>INSTRUCTOR: </strong>Harry Scanlan</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="education">
+          <h2>Education</h2>
+          <hr>
+
+          <div class="display">
+
+            <div class="card">
+              <img src="src/images/seneca.png" alt="Seneca College Newnham Campus">
+              <div>
+                <h2>Seneca College</h2>
+                <h4>Advanced Diploma</h4>
+                <p>Computer Programmin & Analysis</p>
+                <p>2022 - 2024 (Expected)</p>
+              </div>
+            </div>
+  
+            <div class="card">
+              <img src="src/images/unip.png" alt="Universidade Paulista">
+              <div>
+                <h2>Universidade Paulista</h2>
+                <h4>Bachelor's Degree</h4>
+                <p>Computer Science</p>
+                <p>2020 - 2021 (Dropped out)</p>
+              </div>
+            </div>
+  
+            <div class="card">
+              <img src="src/images/etep.png" alt="Seneca College Newnham Campus">
+              <div>
+                <h2>ETEP Faculdades</h2>
+                <h4>Technical School</h4>
+                <p>Informatics</p>
+                <p>2017 - 2019</p>
+              </div>
+            </div>
+
+            
+          </div>
+          
+        </div>
+
+        <div class="contact">
+          <h1>Get in Contact with me</h1>
+
+          <form action="https://httpbin.org/post" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <input type="text" name="address" required><br><br>
+
+            <label for="city">City:</label><br>
+            <input list="cities" name="city" required><br><br>
+            <datalist id="cities">
+              <option value="Toronto"></option>
+              <option value="Vancouver"></option>
+              <option value="Quebec City"></option>
+              <option value="Ottawa"></option>
+              <option value="Calgary"></option>
+              <option value="Winnipeg"></option>
+              <option value="Montreal"></option>
+            </datalist>
+
+            <div class="radios">
+             <input type="radio" id="question" name="opt" value="Question" onclick="showOrHide()">
+              <label for="question">Question</label><br>
+
+              <input type="radio" id="comment" name="opt" value="Comment" onclick="showOrHide()">
+              <label for="comment">Comment</label><br>
+
+
+              <input type="radio" id="hire" name="opt" value="Hiring" onclick="showOrHide()">
+              <label for="hire">Hiring</label><br>
+            </div>
+
+            <div class="show" id="show">
+              <label for="rate">Hourly Rate:</label>
+              <input type="number" name="rate" value="0" required>
+            </div>
+
+            <textarea
+                cols="32"
+                rows="5"
+                placeholder="Type your message here..."
+                name="message"
+                required
+            ></textarea><br><br>
+
+              <label for="rate">How much do you like this webpage:</label><br>
+              <input type="range" min="0" name="rating" max="10" value="10"><br><br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+</body>
+</html>

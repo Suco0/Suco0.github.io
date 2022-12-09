@@ -1,0 +1,110 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    background-color: #fffdff;
+}
+.content {
+    width: 95%;
+    max-width: 1024px;
+    text-align: center;
+    margin: auto;
+}
+.profile {
+    background-color: #3e3264;
+    color: #df0772;
+}
+.about {
+    text-align: left;
+    display: flex;
+    background-color: #01cbcf;
+    
+} 
+.about div {
+    width: 45%;
+    padding-left: 10%;
+}
+
+.education
+{
+    background-color: #fffdff ;
+    color: #0bffe6;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+
+}
+.display {
+    display: flex;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 130px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 #df0772;
+    max-width: 300px;
+    max-height: 360px;
+    margin: auto;
+    text-align: center;
+    color: #df0772;
+    line-height: 80%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 #df0772;
+}
+.radios {
+    display: flex;
+    margin: auto;
+    max-width: 40%;
+    padding-bottom: 15px;
+}
+.show input {
+    max-width: 30px;
+}
+.show {
+    display: none;
+}
+.contact {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 23px;
+    background-color: #3e3264;
+    color: #df0772;
+}
+hr {
+    width: 25%;
+    border: dotted #0bffe6;
+    border-bottom: none;
+  }
+
+.pfp {
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    border: 3px solid #df0772;
+  }
+
+button {
+    transition: all 0.4s ease 0s;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-size: 17px;
+    color: #df0772;
+    background: #0bffe6;
+    margin-bottom: 10px;
+    width: 20%;
+    border-color: #df0772;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.5vw;
+    white-space:nowrap;
+  }
+
+
+  button:hover {
+    background: #fffdff;
+  }
